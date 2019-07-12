@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5245426A22D6B9A00051BA4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245426922D6B9A00051BA4F /* AppDelegate.swift */; };
-		5245426C22D6B9A00051BA4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245426B22D6B9A00051BA4F /* ViewController.swift */; };
 		5245426F22D6B9A00051BA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5245426D22D6B9A00051BA4F /* Main.storyboard */; };
 		5245427222D6B9A00051BA4F /* liteNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5245427022D6B9A00051BA4F /* liteNotes.xcdatamodeld */; };
-		5245427422D6B9A30051BA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5245427322D6B9A30051BA4F /* Assets.xcassets */; };
 		5245427722D6B9A30051BA4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5245427522D6B9A30051BA4F /* LaunchScreen.storyboard */; };
+		5245428322D6BE160051BA4F /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245428222D6BE160051BA4F /* FolderViewController.swift */; };
+		5245428522D6BF600051BA4F /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245428422D6BF600051BA4F /* NoteViewController.swift */; };
+		5245428922D803540051BA4F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245428822D803540051BA4F /* ContentViewController.swift */; };
+		5245428B22D826DA0051BA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5245428A22D826DA0051BA4F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5245426622D6B9A00051BA4F /* liteNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liteNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5245426922D6B9A00051BA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5245426B22D6B9A00051BA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5245426E22D6B9A00051BA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5245427122D6B9A00051BA4F /* liteNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = liteNotes.xcdatamodel; sourceTree = "<group>"; };
-		5245427322D6B9A30051BA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5245427622D6B9A30051BA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5245427822D6B9A30051BA4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5245428222D6BE160051BA4F /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
+		5245428422D6BF600051BA4F /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		5245428822D803540051BA4F /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		5245428A22D826DA0051BA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +61,48 @@
 			isa = PBXGroup;
 			children = (
 				5245426922D6B9A00051BA4F /* AppDelegate.swift */,
-				5245426B22D6B9A00051BA4F /* ViewController.swift */,
-				5245426D22D6B9A00051BA4F /* Main.storyboard */,
-				5245427322D6B9A30051BA4F /* Assets.xcassets */,
-				5245427522D6B9A30051BA4F /* LaunchScreen.storyboard */,
+				5245427E22D6BA5C0051BA4F /* Controllers */,
+				5245428022D6BA830051BA4F /* Views */,
+				5245427F22D6BA770051BA4F /* SupportingFiles */,
 				5245427822D6B9A30051BA4F /* Info.plist */,
-				5245427022D6B9A00051BA4F /* liteNotes.xcdatamodeld */,
+				5245428122D6BA930051BA4F /* DataModel */,
 			);
 			path = liteNotes;
+			sourceTree = "<group>";
+		};
+		5245427E22D6BA5C0051BA4F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5245428222D6BE160051BA4F /* FolderViewController.swift */,
+				5245428422D6BF600051BA4F /* NoteViewController.swift */,
+				5245428822D803540051BA4F /* ContentViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5245427F22D6BA770051BA4F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5245428A22D826DA0051BA4F /* Assets.xcassets */,
+				5245427522D6B9A30051BA4F /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5245428022D6BA830051BA4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5245426D22D6B9A00051BA4F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5245428122D6BA930051BA4F /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5245427022D6B9A00051BA4F /* liteNotes.xcdatamodeld */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5245427722D6B9A30051BA4F /* LaunchScreen.storyboard in Resources */,
-				5245427422D6B9A30051BA4F /* Assets.xcassets in Resources */,
+				5245428B22D826DA0051BA4F /* Assets.xcassets in Resources */,
 				5245426F22D6B9A00051BA4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5245426C22D6B9A00051BA4F /* ViewController.swift in Sources */,
+				5245428922D803540051BA4F /* ContentViewController.swift in Sources */,
+				5245428522D6BF600051BA4F /* NoteViewController.swift in Sources */,
+				5245428322D6BE160051BA4F /* FolderViewController.swift in Sources */,
 				5245427222D6B9A00051BA4F /* liteNotes.xcdatamodeld in Sources */,
 				5245426A22D6B9A00051BA4F /* AppDelegate.swift in Sources */,
 			);
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nabilarbouz.liteNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nabilarbouz.liteNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
